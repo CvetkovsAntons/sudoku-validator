@@ -18,7 +18,7 @@ class Validator {
       let rowFiltered = [] // array that will store current row (split[i]) filtered values
 
       for (let valueIndex = 0; valueIndex < row.length; valueIndex++) { // for loop that goes through row (split[i]) values
-        if (row[valueIndex] !== ' ' && row[valueIndex] !== '|') { // if row value is not a number than it will be added to rowFiltered array
+        if (row[valueIndex] !== ' ' && row[valueIndex] !== '|') { // if row value is number than it will be added to rowFiltered array
           rowFiltered.push(row[valueIndex])
         }
       }
